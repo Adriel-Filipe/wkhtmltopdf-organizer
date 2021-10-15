@@ -22,5 +22,6 @@ if %month%==12 set monthname=dezembro
 
 wkhtmltopdf http://google.com file.pdf
 ren file.pdf %filename%.pdf
-move %filename%.pdf ./%monthname%
+move %filename%.pdf ./%year%/%monthname%
+pause
 
