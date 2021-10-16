@@ -34,7 +34,7 @@ if %month%==10 set monthname=Outubro
 if %month%==11 set monthname=Novembro
 if %month%==12 set monthname=Dezembro
 
-REM wkhtmltopdf http://google.com file.pdf
+wkhtmltopdf http://google.com file.pdf
 
 ren file.pdf %filename%.pdf
 move %filename%.pdf ./%year%/%monthname%
