@@ -6,6 +6,7 @@ set month=%dt:~4,2%
 set day=%dt:~6,2%
 set filename=%date:~0,2%-%date:~3,2%-%date:~6,4%_%time:~0,2%.%time:~3,2%.%time:~6,2%
 
+IF NOT EXIST %year% echo "criando pastas do ano de %year%..."
 IF NOT EXIST %year% mkdir %year% Janeiro Fevereiro Marco Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro 
 
 move Janeiro ./%year% 
@@ -38,3 +39,5 @@ wkhtmltopdf http://google.com file.pdf
 
 ren file.pdf %filename%.pdf
 move %filename%.pdf ./%year%/%monthname%
+
+echo "arquivo gerado e salvo em %year%/%monthname%."
