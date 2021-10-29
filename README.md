@@ -6,4 +6,4 @@
 
 ## pt-BR
 ### Esse script organiza os arquivos .pdf gerados pelo wkhtmltopdf em pastas de ano e mês.
-## Maiores informações sobre o wkhtml: https://wkhtmltopdf.org/
+## Maiores informações sobre o wkhtmltopdf: https://wkhtmltopdf.org/
